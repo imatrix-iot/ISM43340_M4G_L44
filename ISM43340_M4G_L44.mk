@@ -71,6 +71,8 @@ GLOBAL_INCLUDES  += .
 GLOBAL_INCLUDES  += $(SOURCE_ROOT)libraries/inputs/gpio_button
 
 # Global defines
+# This platform supports CCMSRAM
+GLOBAL_DEFINES += USE_CCMRAM
 # HSE_VALUE = STM32 crystal frequency = 26MHz (needed to make UART work correctly)
 GLOBAL_DEFINES += HSE_VALUE=26000000
 #GLOBAL_DEFINES += $$(if $$(NO_CRLF_STDIO_REPLACEMENT),,CRLF_STDIO_REPLACEMENT)
